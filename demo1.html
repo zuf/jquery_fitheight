@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru-ru" xml:lang="ru-ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+<title>Demo</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+<script src="jQuery.fitHeight.js" type="text/javascript"></script>
+<style type="text/css">
+#content div
+{
+  margin: 10px; padding: 10px; background: #888; border: solid 1px #444;
+  float: left;
+  min-width: 200px;
+}
+
+#content {/*width: 484px;*/}
+</style>
+</head>
+<body>
+
+<div id="content">
+
+<div>1<br /></div>
+<div>2<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<div>3<br /><br /><br /><br /><br /><br /></div>
+<div>4 <br /><br /><br /><br /><br /></div>
+<div>5 <br /><br /><br /></div>
+<div>6 <br /><br /></div>
+<div>7 <br /><p>test p</p></div>
+<div>8 <br /><br /><br /><br /><br /></div>
+<div>9 <br /></div>
+<div>10 <br /><br /><br /><br /></div>
+<div>11 <br /><br /><br /><br /><br /></div>
+<div>12 <br /><br /><br /></div>
+<div>13 <br /><br /><br /><br /><br /><br /><br /></div>
+<div>14 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<div>15</div>
+<div>16</div>
+</div>
+
+<script type="text/javascript">
+
+$(function(){
+
+//$('#content div').setMaxHeight();
+$('#content div').fitMaxHeightByRow();
+
+      $(window).resize(function() {
+	$('#content div').fitMaxHeightByRow();
+      });
+
+});
+
+
+</script>
+
+
+
+</body>
