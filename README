@@ -1,0 +1,11 @@
+fitHeight plugin
+
+sage
+Selected DOM Elements must use css float property.
+
+  $("#panel .box").fitMaxHeightByRow();
+  $("#content div").fitMaxHeight();
+
+
+Note
+Some browsers (Chrome 9 for example) doesn't care about <img> height without "height" property.
