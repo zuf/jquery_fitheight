@@ -1,6 +1,6 @@
 fitHeight plugin
 
-sage
+Usage
 Selected DOM Elements must use css float property.
 
   $("#panel .box").fitMaxHeightByRow();
